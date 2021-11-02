@@ -58,5 +58,5 @@ wcwidth
 webencodings
 Werkzeug
 widgetsnbextension
-xgboost == 0.90
+xgboost==0.90
 zipp
