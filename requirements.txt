@@ -47,7 +47,7 @@ scipy
 seaborn
 Send2Trash
 six
-sklearn
+sklearn==0.0
 tabulate
 terminado
 testpath
