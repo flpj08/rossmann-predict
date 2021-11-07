@@ -6,7 +6,7 @@ Uma competição foi proposta no site [Kaggle](https://www.kaggle.com/c/rossmann
 ## 1. Business Problem
 Rossmann opera mais de 3.000 drogarias em 7 países europeus. Atualmente, os gerentes de loja da Rossmann têm a tarefa de prever suas vendas diárias com até seis semanas de antecedência. As vendas da loja são influenciadas por muitos fatores, incluindo promoções, competição, feriados escolares e estaduais, sazonalidade e localidade. Com milhares de gerentes individuais prevendo vendas com base em suas circunstâncias únicas, a precisão dos resultados pode ser bastante variada. (kaggle.com, tradução livre).
 
-## 2. Business Assumption
+## 2. Assumption
 ### 2.1. Definição dos atributos
 A definição para cada um dos atributos encontra-se abaixo, conforme indicação no problema, apresentado pelo Kaggle: https://www.kaggle.com/c/rossmann-store-sales/data
 |              Atributos             |                                  Significado                                            |
@@ -27,6 +27,12 @@ A definição para cada um dos atributos encontra-se abaixo, conforme indicaçã
 |       Promo2Since\[Year/Week\]     | A metragem quadrada do espaço habitacional interior abaixo do nível do solo |
 |            PromoInterval           | describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew.<br> E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store               |
 
+### 2.2. Business Assumption
+- CompetitionDistance       -> Para os casos como NA, foram assumidos que competidores estavam a 200000.0 (muito longe).
+- CompetitionOpenSiceMonth  -> Para os casos como NA, foram assumidos como o mês da coluna Date, da respectiva linha.
+- CompetitionOpenSiceYear   -> Para os casos como NA, foram assumidos como o ano da coluna Date, da respectiva linha.
+- Promo2SinceWeek           -> Para os casos como NA, foram assumidos como a semana correspondente a data da coluna Date, da respectiva linha.
+- Promo2SiceYear            -> Para os casos como NA, foram assumidos como o ano da coluna Date, da respectiva linha.
 
 ## X. Solution Strategy
 
