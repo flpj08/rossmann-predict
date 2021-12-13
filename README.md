@@ -33,9 +33,48 @@ A definição para cada um dos atributos encontra-se abaixo, conforme indicaçã
 - CompetitionOpenSiceYear   -> Para os casos como NA, foram assumidos como o ano da coluna Date, da respectiva linha.
 - Promo2SinceWeek           -> Para os casos como NA, foram assumidos como a semana correspondente a data da coluna Date, da respectiva linha.
 - Promo2SiceYear            -> Para os casos como NA, foram assumidos como o ano da coluna Date, da respectiva linha.
+- Apenas os registros que possuem Open = 1 e Sales > 0 serão considerados para preparação do modelo.
 
-## X. Solution Strategy
+## 3. Solution Strategy
+**Coleta de Dados:** Coleta dos dados no kaggle, [Rossmann Store Sales - Data](https://www.kaggle.com/c/rossmann-store-sales/data).
 
-## X. Conclusion
+**Preparação dos Dados:** 
+- Realização de transformações como renomeação de colunas, alteração de tipos de dados, preenchimento de valores NA.
+- Além disso, realização de análise estatística descritiva.
 
-## X. Next Steps to Improve
+**Feature Engineering:**
+- Criação do Mindmap de hipóteses.
+- Criação de novos atributos, com base no midnmap.
+- Filtragem de variáveis
+
+**Análise Exploratória de Dados:** Realização de análises exploratórias Univariada, Bivariada e Multivariada. 
+
+**Modelagem de Dados:** Preparação dos dados para aplicação do modelo.
+
+**Seleção de Features:** Aplicação do algorítmo Boruta para seleção de features.
+
+**Machine Learning:** Escolha de um modelo de machine learning para previsão de vendas através de testes (Os modelos testados são: Avarage Model, Linear Regression Model, Linear Regression Regularized Model - LASSO, Random Forest Regressor e XGBoost Regressor).
+
+**Hyperparameter Fine Tuning:** Aplicação da estratégia de Random Search para seleção de parâmetros.
+
+**Interpretação dos Erros:** Análise e interpretação da performance do modelo aplicado.
+
+**Deploy:** Disponibilizar o acesso às previsões através de um robô, no aplicativo Telegram.
+
+## 4. Top 3 Data Insights
+**H1:** Lojas com maior sortimentos deveriam vender mais.
+
+**H2:** Lojas com competidores mais próximos deveriam vender menos.
+
+**H8:** Lojas deveriam vender mais ao longo dos anos.
+
+## 5. Machine Learning Model
+XGBoost foi selecionada devido à sua boa performance e baixo uso computacional em comparação a Random Forest.
+
+## 6. Machine Learning Performance
+
+## 7. Business Result
+
+## 8. Conclusion
+
+## 9. Next Steps to Improve
