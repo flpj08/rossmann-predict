@@ -1,3 +1,5 @@
+<img align="right" width="300" height="100" src="https://www.rossmann.de/dam/jcr:0d0bb06a-8527-4d7c-ac70-7cb60e7d0007/ROSSMANN_Wort_Bild_Claim_Schutz_L_cmyk.2018-09-21-09-58-28.jpg">
+
 # Rossmann - Previsão de Vendas
 Este projeto segue as recomendações do curso **DS em Produção**, na [Comunidade DS](https://www.comunidadedatascience.com/). 
 Uma competição foi proposta no site [Kaggle](https://www.kaggle.com/c/rossmann-store-sales/overview/description) em 2015, onde apresentou-se um problema de predição de vendas para a empresa Rossmann.
