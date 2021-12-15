@@ -72,9 +72,56 @@ A definição para cada um dos atributos encontra-se abaixo, conforme indicaçã
 XGBoost foi selecionada devido à sua boa performance e baixo uso computacional em comparação a Random Forest.
 
 ## 6. Machine Learning Performance
+A performance do modelo é medida através da análise do erro das previsões.
+* A coluna MAE (Mean Absolute Error) representa a variação média que o modelo apresenta nas previsões.
+* Já a coluna MAPE (Mean Absolute Percentage Error), é a representação em percentual do MAE.
+
+|Model Name| MAE |	MAPE |
+| ----- | ----------- | --------------- |
+|XGB Regressor Tuned |	886.07 |	0.1336 |
+
+---------------------------------------
+
+A maioria das lojas encontram-se na região do MAPE entre 0,015 e 0,25. Essa informação pode ser observada no gráfico abaixo, onde é possível verificar a concentração na região indicada.
+
+Neste gráfico é claramente possível obserar que existem lojas mais desafiadoras que outras.
+![alt_text](img/MAPEregiao.png)
+
+---------------------------------------
+
+Na figura abaixo, o primeiro gráfico apresenta as previsões das lojas nas próximas 6 semanas. Onde a linha azul representa as vendas reais e as previsões são representadas pela linha laranja.
+
+O segundo gráfico mostra a variação do erro ao longo do tempo, sendo a linha base no valor 1, que indicaria uma previsão perfeita.
+
+No terceiro gráfico, pode-se observar a distribuição dos erros que o modelo gerou.
+
+E por fim, o último gráfico apresenta a relação entre o erro e a previsão que o modelo gerou. Onde é possível observar que quanto maior o valor da previsão, mais disperso fica o erro.
+![alt_text](img/MachineLearningPerformance.png)
+
+---------------------------------------
 
 ## 7. Business Result
+O negócio pode verificar o resultado através de uma aplicação no Telegram, que possibilita ao usuário ter acesso às previsões de venda para cada loja.
+[Rossmann Bot Telegram](http://t.me/fjj02_rossmann_bot)
+
+1. Clique no link acima e será direcionado ao Telegram;
+2. Escreva: '/start'
+3. Escolha a loja que deseja ver a previsão nas próximas 6 semanas, enviando o número da loja seguido de uma barra. Assim: '/32'
+4. ![alt_text](img/result-business.png)
+
+---------------------------------------
+**TOTAIS:**
+* A soma de todas as previsões das lojas nas 6 semanas foi de *$283,551,671.77*.
+* Sendo o melhor cenário com valor de *$284,541,502.65*, e o pior, com valor de *$282,561,840.88*.
+
+|    Scenario    |       Values       |
+| -------------- | ------------------ |
+| predictions    |   $283,551,671.77  |
+| worst_scenario |   $282,561,840.88  |
+| best_scenario  |   $284,541,502.65  |
+
 
 ## 8. Conclusion
+
 
 ## 9. Next Steps to Improve
