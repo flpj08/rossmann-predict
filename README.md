@@ -122,6 +122,9 @@ O negócio pode verificar o resultado através de uma aplicação no Telegram, q
 
 
 ## 8. Conclusion
-
+Chegou-se ao proposto no objetivo deste projeto. Sendo possível o CTO realizar consulta das previsões, por loja, de maneira simples através dos seus dispositivos móveis.
+Foi possível observar também que existem lojas, cujas previsões ficaram com um erro considerável (são mais desafiadoras).
 
 ## 9. Next Steps to Improve
+* Realização de um novo ciclo para o aperfeiçoamento do modelo em relação as lojas que apresentaram um MAPE elevado.
+* Aperfeiçoamento do modelo em relação ao RMSE, que apresentou um valor de 1251.450902. O que significa que o modelo está sensível aos outliers.
